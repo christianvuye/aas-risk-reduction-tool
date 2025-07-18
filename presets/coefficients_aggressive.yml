@@ -1,0 +1,153 @@
+# Aggressive preset coefficients for risk multipliers
+# Exaggerated risk increases and mitigation benefits (+30% distance from 1)
+
+physiologic_t_base:
+  ascvd: 1.00
+  hf: 1.00
+  thrombosis: 1.00
+  hepatic: 1.00
+  renal: 1.00
+  neuro: 1.00
+  diabetes: 1.00
+  dementia: 1.00
+  endocrine: 1.00
+  dermatologic: 1.00
+
+per_100mg_wte_over_150mg_26wks:
+  ascvd: 1.104
+  hf: 1.156
+  thrombosis: 1.130
+  neuro: 1.065
+
+stack_300mg_20wks:
+  ascvd: 1.065
+  hf: 1.104
+  thrombosis: 1.078
+  renal: 1.065
+  neuro: 1.065
+
+oral_17aa_10wks_moderate:
+  ascvd: 1.052
+  hf: 1.039
+  thrombosis: 1.052
+  hepatic: 1.325
+  renal: 1.039
+  neuro: 1.091
+
+oral_17aa_10wks_high:
+  ascvd: 1.078
+  hepatic: 1.520
+  thrombosis: 1.065
+  hf: 1.052
+  renal: 1.065
+  neuro: 1.130
+
+hdl_nadir_lt25:
+  ascvd: 1.065
+
+hematocrit_gt54:
+  ascvd: 1.130
+  hf: 1.078
+  thrombosis: 1.455
+
+recovery_ratio_lt_0_5:
+  ascvd: 1.065
+  hf: 1.078
+  thrombosis: 1.065
+  hepatic: 1.130
+  renal: 1.091
+  neuro: 1.065
+
+vo2_plus5:
+  ascvd: 0.870
+  hf: 0.805
+  thrombosis: 0.896
+  renal: 0.935
+  neuro: 0.935
+
+additional_vo2_plus5:
+  ascvd: 0.909
+  hf: 0.870
+
+bodyfat_minus5pts:
+  ascvd: 0.935
+  hf: 0.909
+  thrombosis: 0.948
+  hepatic: 0.935
+  renal: 0.922
+  neuro: 0.935
+  diabetes: 0.740
+
+med_diet_high:
+  ascvd: 0.870
+  hepatic: 0.870
+  thrombosis: 0.935
+  neuro: 0.935
+  dementia: 0.870
+  cancer_colorectal: 0.740
+
+osa_treated:
+  ascvd: 0.870
+  hf: 0.870
+  thrombosis: 0.896
+  neuro: 0.870
+  dementia: 0.870
+
+replace_heavy_with_mild:
+  ascvd: 0.935
+  hf: 0.870
+  neuro: 0.896
+  hepatic: 0.935
+
+statin_low_intensity:
+  ascvd: 0.870
+
+statin_moderate:
+  ascvd: 0.740
+
+statin_high:
+  ascvd: 0.610
+
+ezetimibe_addon:
+  ascvd: 0.909
+
+pcsk9_inhibitor:
+  ascvd: 0.805
+
+omega3_high_purity:
+  ascvd: 0.935
+  thrombosis: 0.935
+  hepatic: 0.961
+
+glp1_gip:
+  diabetes: 0.480
+  ascvd: 0.896
+  hf: 0.870
+
+metformin:
+  diabetes: 0.805
+  ascvd: 0.961
+
+pde5_daily:
+  ascvd: 0.961
+  dementia: 0.935
+
+finasteride_dutasteride:
+  cancer_prostate: 0.675
+
+ai_excess_use:
+  ascvd: 1.065
+  neuro: 1.039
+
+serm_post_cycle:
+  endocrine: 0.805
+
+hcg_support:
+  endocrine: 0.870
+
+blood_donation_only_without_dose_reduction:
+  thrombosis: 0.974
+
+dose_reduction_for_hct:
+  thrombosis: 0.805
+  ascvd: 0.935

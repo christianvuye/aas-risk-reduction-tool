@@ -1,0 +1,153 @@
+# Moderate preset coefficients for risk multipliers
+# Base reference for balanced risk assessment
+
+physiologic_t_base:
+  ascvd: 1.00
+  hf: 1.00
+  thrombosis: 1.00
+  hepatic: 1.00
+  renal: 1.00
+  neuro: 1.00
+  diabetes: 1.00
+  dementia: 1.00
+  endocrine: 1.00
+  dermatologic: 1.00
+
+per_100mg_wte_over_150mg_26wks:
+  ascvd: 1.08
+  hf: 1.12
+  thrombosis: 1.10
+  neuro: 1.05
+
+stack_300mg_20wks:
+  ascvd: 1.05
+  hf: 1.08
+  thrombosis: 1.06
+  renal: 1.05
+  neuro: 1.05
+
+oral_17aa_10wks_moderate:
+  ascvd: 1.04
+  hf: 1.03
+  thrombosis: 1.04
+  hepatic: 1.25
+  renal: 1.03
+  neuro: 1.07
+
+oral_17aa_10wks_high:
+  ascvd: 1.06
+  hepatic: 1.40
+  thrombosis: 1.05
+  hf: 1.04
+  renal: 1.05
+  neuro: 1.10
+
+hdl_nadir_lt25:
+  ascvd: 1.05
+
+hematocrit_gt54:
+  ascvd: 1.10
+  hf: 1.06
+  thrombosis: 1.35
+
+recovery_ratio_lt_0_5:
+  ascvd: 1.05
+  hf: 1.06
+  thrombosis: 1.05
+  hepatic: 1.10
+  renal: 1.07
+  neuro: 1.05
+
+vo2_plus5:
+  ascvd: 0.90
+  hf: 0.85
+  thrombosis: 0.92
+  renal: 0.95
+  neuro: 0.95
+
+additional_vo2_plus5:
+  ascvd: 0.93
+  hf: 0.90
+
+bodyfat_minus5pts:
+  ascvd: 0.95
+  hf: 0.93
+  thrombosis: 0.96
+  hepatic: 0.95
+  renal: 0.94
+  neuro: 0.95
+  diabetes: 0.80
+
+med_diet_high:
+  ascvd: 0.90
+  hepatic: 0.90
+  thrombosis: 0.95
+  neuro: 0.95
+  dementia: 0.90
+  cancer_colorectal: 0.80
+
+osa_treated:
+  ascvd: 0.90
+  hf: 0.90
+  thrombosis: 0.92
+  neuro: 0.90
+  dementia: 0.90
+
+replace_heavy_with_mild:
+  ascvd: 0.95
+  hf: 0.90
+  neuro: 0.92
+  hepatic: 0.95
+
+statin_low_intensity:
+  ascvd: 0.90
+
+statin_moderate:
+  ascvd: 0.80
+
+statin_high:
+  ascvd: 0.70
+
+ezetimibe_addon:
+  ascvd: 0.93
+
+pcsk9_inhibitor:
+  ascvd: 0.85
+
+omega3_high_purity:
+  ascvd: 0.95
+  thrombosis: 0.95
+  hepatic: 0.97
+
+glp1_gip:
+  diabetes: 0.60
+  ascvd: 0.92
+  hf: 0.90
+
+metformin:
+  diabetes: 0.85
+  ascvd: 0.97
+
+pde5_daily:
+  ascvd: 0.97
+  dementia: 0.95
+
+finasteride_dutasteride:
+  cancer_prostate: 0.75
+
+ai_excess_use:
+  ascvd: 1.05  # lipid penalty
+  neuro: 1.03  # bone/neuro penalty
+
+serm_post_cycle:
+  endocrine: 0.85
+
+hcg_support:
+  endocrine: 0.90
+
+blood_donation_only_without_dose_reduction:
+  thrombosis: 0.98
+
+dose_reduction_for_hct:
+  thrombosis: 0.85
+  ascvd: 0.95
