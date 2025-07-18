@@ -1,0 +1,46 @@
+name: Test Prototype
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, "3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run prototype tests
+      run: |
+        python test_app.py
+        python test_charts.py
+    
+    - name: Test Streamlit app import
+      run: |
+        python -c "import app; print('✅ App imports successfully')"
+    
+    - name: Validate risk calculations
+      run: |
+        python -c "
+        from risk_model.calculator import compute_domain_risks, create_physiologic_reference_scenario
+        data = create_physiologic_reference_scenario()
+        risks = compute_domain_risks(data, 'moderate')
+        assert 0.20 <= risks['ascvd']['absolute_risk'] <= 0.60, 'ASCVD risk out of expected range'
+        print('✅ Risk calculations working')
+        "
